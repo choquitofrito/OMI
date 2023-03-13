@@ -314,3 +314,62 @@ for($i=1; $i<=10; $i++){
   echo $num . " x " . $i . " = " . $num*$i . "\n";
 }
 ```
+
+## Exercices Arrays
+
+Ex 1.
+
+```php
+$array = [10, 20, 50];
+echo $array[0] . ", " . $array[1] . ", " . $array[2]; // Affiche: 10, 20, 50
+```
+
+Ex 2.
+
+```php
+$array[] = 8;
+$array[] = 70;
+echo $array[1] . ", " . $array[4]; // Affiche: 20, 70
+```
+
+Ex 3.
+
+```php
+$cities = ['Paris', 'New York', 'Tokyo', 'London', 'Berlin'];
+echo $cities[0] . ", " . $cities[1] . ", " . $cities[2] . ", " . $cities[3] . ", " . $cities[4]; // Affiche: Paris, New York, Tokyo, London, Berlin
+```
+
+```php
+$cities = ['Paris', 'New York', 'Tokyo', 'London', 'Berlin'];
+foreach ($cities as $city) {
+  echo $city . ", ";
+}
+// Affiche: Paris, New York, Tokyo, London, Berlin,
+```
+
+Ex 4.
+
+```php
+$cities[] = 'Madrid';
+$cities[] = 'Rome';
+foreach ($cities as $city) {
+  echo $city . ", ";
+} // ou print_r ($cities)
+```
+
+
+Ex 5.
+```php
+$cities[0] = 'Quito';
+```
+
+Ex 6.
+```php
+$array = array();
+for ($i = 1; $i <= 200; $i++) {
+  $array[] = $i;
+}
+
+```
+
+
